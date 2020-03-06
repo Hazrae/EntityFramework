@@ -12,10 +12,12 @@ namespace EntityFramework
         public int AnneeDeSortie { get; set; }
         public string Genre { get; set; }
 
-        public int IdReal { get; set; }
+
 
 
         //One-to-Many
+
+        public int IdReal { get; set; }
         public Personne Realisateur { get; set; }
 
         //Many-to-Many

@@ -18,12 +18,12 @@ namespace EntityFramework.Entity
                         
             builder.HasOne(af => af.F)
                     .WithMany(a => a.Acteurs)
-                    .HasForeignKey(fk => fk.IdFilm);
+                    .HasForeignKey(fk => fk.IdFilm).OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(fa => fa.P)
                     .WithMany(f => f.Actorat)
-                    .HasForeignKey(fk => fk.IdPers);
-                    
+                    .HasForeignKey(fk => fk.IdPers).OnDelete(DeleteBehavior.Restrict);
+
         }
     }
 }

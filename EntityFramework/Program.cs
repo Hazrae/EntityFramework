@@ -81,8 +81,8 @@ namespace EntityFramework
             using (DataContext dc = new DataContext())
             {
                 var FullFilms = dc.ListeFlims.Include(x => x.Realisateur)
-                                             .Include(x=>x.Acteurs).ThenInclude(x=>x.P)
-                                             .ToList();
+                                             .Include(x => x.Acteurs).ThenInclude(x => x.P);
+                                             
                 foreach (var f in FullFilms)
                 {
                     Console.WriteLine($"{f.Titre} a été réalisé par {f.Realisateur.Nom} {f.Realisateur.Prenom}  et les acteurs sont : ");
@@ -91,6 +91,7 @@ namespace EntityFramework
                         Console.Write(acteur.P.Nom);
                     }
                 }
+                               
              }
         }
     }
