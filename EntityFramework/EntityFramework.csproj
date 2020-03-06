@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200305142959_DB_Population.cs" />
+    <Compile Remove="Migrations\20200305142959_DB_Population.Designer.cs" />
+    <Compile Remove="Migrations\20200305143759_DB_Population_2.cs" />
+    <Compile Remove="Migrations\20200305143759_DB_Population_2.Designer.cs" />
+    <Compile Remove="Migrations\20200305144600_DB_Population_3.cs" />
+    <Compile Remove="Migrations\20200305144600_DB_Population_3.Designer.cs" />
+    <Compile Remove="Migrations\20200305144844_DB_Population_4.cs" />
+    <Compile Remove="Migrations\20200305144844_DB_Population_4.Designer.cs" />
+    <Compile Remove="Migrations\20200305145149_DB_Population_5.cs" />
+    <Compile Remove="Migrations\20200305145149_DB_Population_5.Designer.cs" />
+    <Compile Remove="Migrations\20200305150341_DB_Pop.cs" />
+    <Compile Remove="Migrations\20200305150341_DB_Pop.Designer.cs" />
+    <Compile Remove="Migrations\20200305150545_DB_Pop1.cs" />
+    <Compile Remove="Migrations\20200305150545_DB_Pop1.Designer.cs" />
+    <Compile Remove="Migrations\20200305150748_DB_Pop.cs" />
+    <Compile Remove="Migrations\20200305150748_DB_Pop.Designer.cs" />
+    <Compile Remove="Migrations\20200305150957_DB_Pop.cs" />
+    <Compile Remove="Migrations\20200305150957_DB_Pop.Designer.cs" />
+    <Compile Remove="Migrations\20200305151538_DB_Pop2.cs" />
+    <Compile Remove="Migrations\20200305151538_DB_Pop2.Designer.cs" />
+    <Compile Remove="Migrations\20200305152648_DB_Pop_Cascade.cs" />
+    <Compile Remove="Migrations\20200305152648_DB_Pop_Cascade.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Entity\DataSet.1cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
